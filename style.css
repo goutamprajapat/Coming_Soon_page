@@ -1,0 +1,93 @@
+* {
+	 padding: 0;
+	 margin: 0;
+	 box-sizing: border-box;
+}
+ body {
+	 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ .image-container img {
+	 height: 100vh;
+	 position: absolute;
+	 background-repeat: no-repeat;
+	 background-position: right;
+	 width: 100%;
+	 top: 0;
+	 left: 0;
+	 z-index: 0;
+}
+ .image-container .text-container {
+	 position: relative;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 width: 100%;
+	 height: 100vh;
+	 z-index: 1;
+	 backdrop-filter: blur(8px);
+	 -webkit-backdrop-filter: blur(8px);
+}
+ .image-container .text-container .main-text {
+	 color: #fff;
+	 display: flex;
+	 flex-direction: column;
+	 text-align: center;
+}
+ .image-container .text-container .main-text h1 {
+	 font-size: 5rem;
+}
+ .image-container .text-container .main-text p {
+	 font-size: 1rem;
+	 letter-spacing: 0.3rem;
+}
+ .image-container .time-container {
+	 color: #fff;
+	 display: flex;
+	 gap: 2rem;
+	 margin-top: 2rem;
+}
+ .image-container .time-container span {
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 font-size: 1rem;
+}
+ .image-container .time-container .number {
+	 font-weight: bolder;
+	 font-size: 2rem;
+}
+ .image-container .time-container .text {
+	 letter-spacing: 0.2rem;
+}
+ .image-container .footer-container {
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 color: #fff;
+	 margin-top: 1.5rem;
+}
+ .image-container .footer-container p {
+	 margin: 1rem 0rem;
+	 letter-spacing: 0.2rem;
+	 font-weight: bold;
+}
+ .image-container .footer-container .email-container {
+	 display: flex;
+}
+ .image-container .footer-container .email-container #email {
+	 background: #bbbcc969;
+	 border: 1px solid #fff;
+	 color: #fff;
+	 outline: none;
+	 padding: 0.5rem 0.3rem;
+}
+ .image-container .footer-container .email-container #email::placeholder {
+	 color: #fff;
+}
+ .image-container .footer-container .email-container h3 {
+	 background: #fff;
+	 color: #000;
+	 padding: 0.5rem 0.3rem;
+	 margin-left: 0.4rem;
+}
